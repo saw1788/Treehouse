@@ -21,8 +21,8 @@
             <label for="name">Avatar Name:</label>
             <input type="text" id="name" name="character_name">
 
-            <label for="class">Choose your class.</label>
-            <select id="class" name="character_class">
+            <label for="race">Choose your race.</label>
+            <select id="race" name="character_race">
                 <optgroup label="Good">
                     <option value="human">Human</option>
                     <option value="elf">Elf</option>
@@ -34,6 +34,11 @@
                     <option value="kobold">Kobold</option>
                 </optgroup>
             </select>
+            <label for="class">Choose your class:</label>
+            
+            <input type="radio" id="class" value="warrior" name="character_class"><label for="warrior">Warrior</label>
+            <input type="radio" id="class" value="wizard" name="character_class"><label for="wizard">Wizard</label>
+            <input type="radio" id="class" value="archer" name="character_class"><label for="archer">Archer</label>
 
         </fieldset>
 
