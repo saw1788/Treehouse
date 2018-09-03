@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Character Creation Form</title>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+
+      <form action="fantasyRPGAvatar.html" method="post">
+
+        <h1>Fantasy RPG Avatar Form</h1>
+
+        <fieldset>
+
+            <legend>Character Information</legend>
+
+            <label for="name">Avatar Name:</label>
+            <input type="text" id="name" name="character_name">
+
+            <label for="class">Choose your class.</label>
+            <select id="class" name="character_class">
+                <optgroup label="Good">
+                    <option value="human">Human</option>
+                    <option value="elf">Elf</option>
+                    <option value="dwarf">Dwarf</option>
+                </optgroup>
+                <optgroup label="Evil">
+                    <option value="goblin">Goblin</option>
+                    <option value="troll">Troll</option>
+                    <option value="kobold">Kobold</option>
+                </optgroup>
+            </select>
+
+        </fieldset>
+
+
+      </form>
+      
+    </body>
+</html>
