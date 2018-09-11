@@ -5,24 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Character Creation Form</title>
         <link rel="stylesheet" href="../css/normalize.css">
-        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Balthazar" rel="stylesheet">
         <link rel="stylesheet" href="../css/fantasyForm.css">
+        <script src="scripts.js"></script>
     </head>
     <body>
 
-      <form action="fantasyRPGAvatar.html" method="post">
+      <form id="characterForm" action="fantasyRPGAvatar.html" onsubmit="return isBackpackFull()" method="post">
 
         <h1>Fantasy RPG Avatar Form</h1>
 
         <fieldset>
 
-            <legend>Character Information</legend>
+            <legend><h3>Character Information</h3></legend>
 
             <label for="name">Avatar Name:</label>
-            <input type="text" id="name" name="character_name">
+            <input type="text" id="name" name="characterName">
 
             <label for="race">Choose your race.</label>
-            <select id="race" name="character_race">
+            <select id="race" name="characterRace">
                 <optgroup label="Good">
                     <option value="human">Human</option>
                     <option value="elf">Elf</option>
@@ -44,23 +45,25 @@
 
         <fieldset>
 
-            <legend>Backpack</legend>
+            <legend><h3>Backpack</h3></legend>
 
-            <label>Choose uo to five items:</label>
-            <input type="checkbox" id="sword" value="item_sword" name="starting_items"><label class="light" for="sword">Sword</label><br>
-            <input type="checkbox" id="staff" value="item_staff" name="starting_items"><label class="light" for="staff">Staff</label><br>
-            <input type="checkbox" id="bow" value="item_bow" name="starting_items"><label class="light" for="bow">Bow</label><br>
-            <input type="checkbox" id="arrows" value="item_arrows" name="starting_items"><label class="light" for="arrows">Arrows</label><br>
-            <input type="checkbox" id="torch" value="item_torch" name="starting_items"><label class="light" for="torch">Torch</label><br>
-            <input type="checkbox" id="rope" value="item_rope" name="starting_items"><label class="light" for="rope">Rope</label><br>
-            <input type="checkbox" id="cloak" value="item_cloak" name="starting_items"><label class="light" for="cloak">Cloak</label><br>
-            <input type="checkbox" id="canteen" value="item_canteen" name="starting_items"><label class="light" for="canteen">Canteen</label><br>
-            <input type="checkbox" id="rations" value="item_rations" name="starting_items"><label class="light" for="rations">Rations</label><br>
-            <input type="checkbox" id="spell_book" value="item_spell_book" name="starting_items"><label class="light" for="spell_book">Spell book</label><br>
-            <input type="checkbox" id="lock_pick" value="item_lock_pick" name="starting_items"><label class="light" for="lock_pick">Lock pick</label>
+            <label>Choose up to five items:</label>
+            <input type="checkbox" id="sword" value="itemSword" name="startingItems"><label class="light" for="sword">Sword</label><br>
+            <input type="checkbox" id="staff" value="itemStaff" name="startingItems"><label class="light" for="staff">Staff</label><br>
+            <input type="checkbox" id="bow" value="itemBow" name="startingItems"><label class="light" for="bow">Bow</label><br>
+            <input type="checkbox" id="arrows" value="itemArrows" name="startingItems"><label class="light" for="arrows">Arrows</label><br>
+            <input type="checkbox" id="torch" value="itemTorch" name="startingItems"><label class="light" for="torch">Torch</label><br>
+            <input type="checkbox" id="rope" value="itemRope" name="startingItems"><label class="light" for="rope">Rope</label><br>
+            <input type="checkbox" id="cloak" value="itemCloak" name="startingItems"><label class="light" for="cloak">Cloak</label><br>
+            <input type="checkbox" id="canteen" value="itemCanteen" name="startingItems"><label class="light" for="canteen">Canteen</label><br>
+            <input type="checkbox" id="rations" value="itemRations" name="startingItems"><label class="light" for="rations">Rations</label><br>
+            <input type="checkbox" id="spellBook" value="itemSpellBook" name="startingItems"><label class="light" for="spellBook">Spell book</label><br>
+            <input type="checkbox" id="lockPick" value="itemLockPick" name="startingItems"><label class="light" for="lockPick">Lock pick</label>
 
         </fieldset>
 
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
 
       </form>
       
