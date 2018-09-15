@@ -35,6 +35,6 @@ function isBackpackFull(startingItems){
         numItems += 1;
     }
     if (numItems > 5) {
-        alert('Your backpack is full.')
+        alert('Your backpack is full. Try again.')
     }
 }
